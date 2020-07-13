@@ -1,0 +1,146 @@
+.college-card {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    width: 329px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.college-header{
+    padding: 10px;
+    flex: 3;
+    position: relative;
+    background-size: contain;
+    background-repeat: round;
+    background-image: url(http://localhost:3000/college_02.jpg);
+}
+
+.promoted-tag {
+    position: absolute;
+    right: 0px;
+    top: -13px;
+    background-color: #68a7ff;
+    padding: 4px 15px;
+    color: white;
+    font-size: smaller;
+    z-index: 1;
+}
+
+.college-header > div {
+    position: absolute;
+}
+
+.rating{
+    top: 15px;
+    background-color: #f5a626;
+    color: white;
+    padding: 4px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-no > :first-child{
+    font-size: 20px;
+}
+
+.tag-container{
+    bottom: 6px;
+    color: #444444;
+    left: 0;
+    display: flex;
+    width: 60%;
+    margin-left: 3%;
+}
+
+.tag {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: small;
+    font-weight: 700;
+}
+
+.ranking-text{
+    bottom: 13px;
+    right: 0;
+    padding: 0 4px;
+    font-size: 10px;
+    font-weight: 800;
+    color: white;
+    margin-right: 5px;
+}
+.college-info {
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    color: #444444;
+    padding: 6px 0;
+}
+
+.college-info > div {
+    flex: 1;
+}
+
+.college-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.college-name {
+    margin-left: 3%;
+    font-size: 18.5px;
+    font-weight: 700;
+}
+
+.college-fees {
+    font-size: 11px;
+    font-weight: 500;
+    margin-right: 3%
+}
+
+.college-fees > span {
+    background-color: red;
+    color: white;
+    padding: 1px 2px;
+}
+
+.college-knowhows {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 3%;
+}
+
+.nearest-places {
+    font-size: 13.5px;
+    font-weight: 500;
+}
+
+.discounted-fee {
+    font-size: 28.5px;
+    font-weight: bold;
+    color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.discounted-fee > sub {
+    font-size: 8px;
+    color: #444444;;
+}
+
+.offer-text {
+    width: 347px;
+    height: 35px;
+    background-color: #ccf5e7;
+}
+
+.amenties {
+    color:#37b396;
+    font-size: 13.5px;
+    font-weight: bold;
+}
