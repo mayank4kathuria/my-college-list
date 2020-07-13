@@ -7,7 +7,6 @@ import data from '../../dummyData/data.json';
 class CollegeList extends React.Component {
     constructor(props){
         super();
-        
         this.state = {
             colleges: [],
             page: 0,
@@ -17,7 +16,6 @@ class CollegeList extends React.Component {
     }
     
     componentDidMount(){
-        const colleges = data;
         this.incrementPage();
     }
 
@@ -25,7 +23,7 @@ class CollegeList extends React.Component {
         const {page} = this.state;
         const incrementBy = this.incrementBy;
         const nextPage = page + incrementBy;
-        const newData = data['colleges'].length > 0 && data['colleges'].slice(page,nextPage) || [];
+        const newData = (data['colleges'].length > 0 && data['colleges'].slice(page,nextPage)) || [];
 
         if (nextPage <= data['colleges'].length){
             this.setState((prevState) => ({
@@ -37,7 +35,6 @@ class CollegeList extends React.Component {
 
     render(){
         const { colleges } = this.state;
-        console.log(colleges);
         return (
             <div className='college-container'>
                 <section className='head'>
@@ -45,10 +42,11 @@ class CollegeList extends React.Component {
                 </section>
                 <section className='body'>
                     {colleges.length > 0 && (<LazyLoad increment={this.incrementPage}>
-                        <div className='lazy-class'>
-                            {colleges.map(college => 
-                                <CollegeCard college={college}/>) 
+                        <div className='college-lists'>
+                            {colleges.map((college,i) => 
+                                <CollegeCard college={college} key={college + i}/>) 
                             }
+                            <span id='lazy-load-anchor'></span>
                         </div>
                     </LazyLoad>)
                     }

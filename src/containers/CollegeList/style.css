@@ -1,15 +1,34 @@
-.head {
-    width: 65%;
+.college-container{
+    font-size: 18.5px;
+    font-weight: 500;
+    color: #444444;
     margin: 0 auto;
 }
 
+.head {
+    margin: 0 40px;
+}
+
 .body{
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.lazy-class > div {
-    margin: 10px 0;
+.college-lists > div {
+    margin: 10px 16px;
 }
+
+.college-lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 945px){
+    .college-lists > div {
+        margin: 37px 0;
+    }
+}
+
+

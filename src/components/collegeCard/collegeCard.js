@@ -1,10 +1,9 @@
 import React from 'react';
-import style from './style.css';
+import './style.css';
 
 const CollgeCard = (props) => {
-    /* pass the received data to the College card component*/
     const {college_name,promoted,discount,original_fees,discounted_fees,
-        fees_cycle,image,ranking,tags,amenties,rating,rating_remarks,
+        fees_cycle,ranking,tags,amenties,rating,rating_remarks,
         nearest_place,famous_nearest_places,offertext} = props.college;
 
     return (
@@ -19,7 +18,7 @@ const CollgeCard = (props) => {
                     <div>{rating_remarks}</div>
                 </div>
                 <div className='tag-container'>
-                    {tags.map(tag => <span className='tag'>{tag}</span>)}
+                    {tags.map((tag,i) => <span key={tag+i}className='tag'>{tag}</span>)}
                 </div>
                 <div className='ranking-text'>#{ranking}</div>
             </div>
@@ -29,7 +28,7 @@ const CollgeCard = (props) => {
                         {college_name}
                     </div>
                     <div className='college-fees'>
-                    <strike> ₹ {original_fees} </strike>
+                    <strike> {`₹${original_fees}`} </strike>
                         <span>{discount}</span>
                     </div>
                 </div>
@@ -38,9 +37,10 @@ const CollgeCard = (props) => {
                         {nearest_place.join('  |  ')}
                     </div>
                     <div className='discounted-fee'>
-                    <span>₹ {discounted_fees}</span>
-                    <sub>{fees_cycle}</sub>
+                        <span>₹ {discounted_fees}</span>
+                        <sub>{fees_cycle}</sub>
                     </div>
+                <div className='famous-nearest-places'>{famous_nearest_places}</div>
                 </div>
                 <div className='college-extra-info'>
                     <div className='offer-text'>
