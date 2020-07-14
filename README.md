@@ -5,7 +5,7 @@ link: https://objective-lamport-241a48.netlify.app
 
 ### How to run it locally?
   1) Clone the repo on your local machine.
-  2) Move over to the folder my-college-list
+  2) Move over to the folder my-college-list and do a yarn add or npm i
   3) Do a yarn start or npm start
   4) Enjoy!
 
