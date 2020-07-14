@@ -1,68 +1,43 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Link to the project: 
+link: https://objective-lamport-241a48.netlify.app
 
-In the project directory, you can run:
+### How to run it locally?
+  1) Clone the repo on your local machine.
+  2) Move over to the folder my-college-list
+  3) Do a yarn start or npm start
+  4) Enjoy!
 
-### `yarn start`
+**Note: This is tested on desktop (Chrome v83) and Mobile (Firefox v68.5).  There could be bugs on other browsers as it isn't extensively tested**
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## About the assigment
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+In the project I was asked to develop a webpage from a Zeplin design and implement Infinite scroll which could load 10 colleges
+initially and once the user has scrolled till the next the next in line colleges should be displayed. This process should
+be repeated until the user has scrolled till the end (in my case 50 colleges).
 
-### `yarn test`
+### Features
+  1) Smooth Infinite scroll
+  2) Mobile device friendly, Uses Mobile first approach
+  3) Responsive webpage for mobile and desktop devices
+  4) Optimised performance by caching asserts, reducing redundant re-renders, using stateless Function components
+     for simple UI elements.
+  5) All design elements are make using HTML, CSS, hence are light-weight and efficient.
+  6) Flexible, modular, Nearly organised written code following industry's best practices.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### short comings
 
-### `yarn build`
+We all chase perfection in this world yet we always fall short of it. The project is a work of couple of hours and is tested by a single person and hence
+has some known short comings like UI elements might differ on mobile devices apart from mentioned above, Rating stars are missing from actual implmentation
+as asserts were missing in the design, inline styling of certain elements were left due to lack of solution about it's implmentation.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### what could be improved
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+The project could be tested on multiple devices using multiple browsers to bring out the possible bugs to develop a robust website. Apart from it, Lazy load of
+components, optimisations in the API level could be performed to further improve the webpage's performance.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+**Hope you have a good day**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
