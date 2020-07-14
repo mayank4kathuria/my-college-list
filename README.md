@@ -18,7 +18,7 @@ In the project it was asked to develop a webpage from a Zeplin design and implem
 initially and once the user has scrolled till the end the next in list of colleges should be displayed. This process should
 be repeated until the user has scrolled till the end of list(in my case 50 colleges).
 
-### Features
+## Features
   1) Smooth Infinite scroll.
   2) Mobile device friendly, Uses Mobile first approach.
   3) Responsive webpage for mobile and desktop devices.
@@ -27,13 +27,13 @@ be repeated until the user has scrolled till the end of list(in my case 50 colle
   5) All design elements are created using HTML, CSS, hence are light-weight and efficient.
   6) Nearly written, Flexible, modular code following Frontend's best coding practices.
 
-## Short comings
+### Short comings
 
 We all chase perfection in this world yet we always fall short of it. The project is a work of couple of hours and is tested by a single person and hence
 has some known short comings like UI elements might differ on mobile devices apart from mentioned above, Rating stars are missing from actual implmentation
 as asserts were missing in the design.
 
-## What could be improved
+### What could be improved
 
 The project could be tested on multiple devices using multiple browsers to bring out the possible bugs to develop a robust website. Apart from it, Lazy load of
 components, optimisations at the API level could be performed to further improve the webpage's performance.
